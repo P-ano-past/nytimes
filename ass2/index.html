@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz!</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>​
+<div class="container">
+
+    <body>​
+        <div class="jumbotron jumbotron-fluid bg-dark">
+            <div class="container">
+                <i class="fa fa-car display-6" style="font-size:48px;"></i>
+                <h1 class="display-6 text-center text-white">New York Times!</h1>
+            </div>
+        </div>
+
+        <div class="card" style="padding-bottom: 30px;">
+            <div class="card-header bg-dark text-white">
+                Search Parameters
+            </div>
+            <div class="card-heade color-white margin-left">
+                <form>
+                    <div class="form-row col-md-12" style="margin-top: 20px;">
+                        <div class="form-group col-md-3">
+                            <label for="inputEmail4">Search Term</label>
+                            <input type="email" class="form-control" id="search-term">
+                        </div>​
+                    </div>
+
+                    <div class="form-row col-md-12" style="margin-top: 20px;">
+                        <div class="form-group col-md-3">
+                            <label for="inputAddress">Number of Records to Retrieve</label>
+                            <input type="text" class="form-control" id="records">
+                        </div>
+                    </div>
+                    <div class="form-row col-md-12" style="margin-top: 20px;">
+                        <div class="form-group col-md-3">
+                            <label for="inputAddress2">Start Year (optional):</label>
+                            <input type="text" class="form-control" id="start-year">
+                        </div>
+                    </div>
+                    <div class="form-row col-md-12" style="margin-top: 20px;">
+                        <div class="form-group col-md-3">
+                            <label for="inputCity">End Year(optional):</label>
+                            <input type="text" class="form-control" id="end-year">
+                        </div>
+                    </div>​
+                </form>
+                <div class="button-row col-md-12" style="margin-top: 20px;">
+                    <button id="search-btn" type="submit" class="btn btn-dark">Search</button>
+                    <button id="clear-btn" type="submit" class="btn btn-dark">Clear Results</button>
+                </div>
+            </div>
+
+        </div>
+        <br>​
+        <div class="card" style="padding-bottom: 30px;">
+            <div class="card-header bg-dark text-white">
+                Top Articles
+            </div>
+            <div class="card-body">
+
+                <span class="badge badge-primary badge-pill">1</span>
+                <h5 id="aticle-title" class="card-title"></h5>
+                <p id="author-name" class="card-text"></p>​
+            </div>
+
+        </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+​
+​
+</html>
